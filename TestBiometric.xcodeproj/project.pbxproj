@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F49BA41C2149305000972920 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49BA41B2149305000972920 /* AppDelegate.swift */; };
+		F49BA41E2149305000972920 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49BA41D2149305000972920 /* ViewController.swift */; };
+		F49BA4242149305000972920 /* TestBiometric.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F49BA4222149305000972920 /* TestBiometric.xcdatamodeld */; };
+		F49BA4262149305200972920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49BA4252149305200972920 /* Assets.xcassets */; };
+		F49BA4292149305200972920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F49BA4272149305200972920 /* LaunchScreen.storyboard */; };
+		F49BA431214930A900972920 /* BiometricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49BA430214930A900972920 /* BiometricView.swift */; };
+		F49BA4342149371F00972920 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49BA4332149371F00972920 /* LocalAuthentication.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F49BA4182149305000972920 /* TestBiometric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestBiometric.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49BA41B2149305000972920 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F49BA41D2149305000972920 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F49BA4232149305000972920 /* TestBiometric.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestBiometric.xcdatamodel; sourceTree = "<group>"; };
+		F49BA4252149305200972920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F49BA4282149305200972920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F49BA42A2149305200972920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F49BA430214930A900972920 /* BiometricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricView.swift; sourceTree = "<group>"; };
+		F49BA4332149371F00972920 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F49BA4152149305000972920 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49BA4342149371F00972920 /* LocalAuthentication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F49BA40F2149305000972920 = {
+			isa = PBXGroup;
+			children = (
+				F49BA41A2149305000972920 /* TestBiometric */,
+				F49BA4192149305000972920 /* Products */,
+				F49BA4322149371E00972920 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F49BA4192149305000972920 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F49BA4182149305000972920 /* TestBiometric.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F49BA41A2149305000972920 /* TestBiometric */ = {
+			isa = PBXGroup;
+			children = (
+				F49BA41B2149305000972920 /* AppDelegate.swift */,
+				F49BA41D2149305000972920 /* ViewController.swift */,
+				F49BA430214930A900972920 /* BiometricView.swift */,
+				F49BA4252149305200972920 /* Assets.xcassets */,
+				F49BA4272149305200972920 /* LaunchScreen.storyboard */,
+				F49BA42A2149305200972920 /* Info.plist */,
+				F49BA4222149305000972920 /* TestBiometric.xcdatamodeld */,
+			);
+			path = TestBiometric;
+			sourceTree = "<group>";
+		};
+		F49BA4322149371E00972920 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F49BA4332149371F00972920 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F49BA4172149305000972920 /* TestBiometric */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F49BA42D2149305200972920 /* Build configuration list for PBXNativeTarget "TestBiometric" */;
+			buildPhases = (
+				F49BA4142149305000972920 /* Sources */,
+				F49BA4152149305000972920 /* Frameworks */,
+				F49BA4162149305000972920 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestBiometric;
+			productName = TestBiometric;
+			productReference = F49BA4182149305000972920 /* TestBiometric.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F49BA4102149305000972920 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = br.com.sankhya.labs;
+				TargetAttributes = {
+					F49BA4172149305000972920 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = F49BA4132149305000972920 /* Build configuration list for PBXProject "TestBiometric" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F49BA40F2149305000972920;
+			productRefGroup = F49BA4192149305000972920 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F49BA4172149305000972920 /* TestBiometric */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F49BA4162149305000972920 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49BA4292149305200972920 /* LaunchScreen.storyboard in Resources */,
+				F49BA4262149305200972920 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F49BA4142149305000972920 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49BA4242149305000972920 /* TestBiometric.xcdatamodeld in Sources */,
+				F49BA41E2149305000972920 /* ViewController.swift in Sources */,
+				F49BA41C2149305000972920 /* AppDelegate.swift in Sources */,
+				F49BA431214930A900972920 /* BiometricView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F49BA4272149305200972920 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F49BA4282149305200972920 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F49BA42B2149305200972920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F49BA42C2149305200972920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F49BA42E2149305200972920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HV5V7KBQHK;
+				INFOPLIST_FILE = TestBiometric/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sankhya.TestBiometric;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F49BA42F2149305200972920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HV5V7KBQHK;
+				INFOPLIST_FILE = TestBiometric/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sankhya.TestBiometric;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F49BA4132149305000972920 /* Build configuration list for PBXProject "TestBiometric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49BA42B2149305200972920 /* Debug */,
+				F49BA42C2149305200972920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F49BA42D2149305200972920 /* Build configuration list for PBXNativeTarget "TestBiometric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49BA42E2149305200972920 /* Debug */,
+				F49BA42F2149305200972920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F49BA4222149305000972920 /* TestBiometric.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F49BA4232149305000972920 /* TestBiometric.xcdatamodel */,
+			);
+			currentVersion = F49BA4232149305000972920 /* TestBiometric.xcdatamodel */;
+			path = TestBiometric.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F49BA4102149305000972920 /* Project object */;
+}
