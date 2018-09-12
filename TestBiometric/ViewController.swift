@@ -27,22 +27,26 @@ class ViewController: UIViewController {
         
         viewBiometric.biometricButton.addTarget(self, action: #selector(authenticator), for: UIControlEvents.touchDown)
         
-        
+        //carrega Keychain desse usuario
         loadKey(account: "Teste")
         
     }
     
     @objc func authenticator()
     {
+        //salva os dados de autenticação em uma KeyChain
         saveKey(account: viewBiometric.userField.text!, password: viewBiometric.passwordField.text!)
+        //carrega a KeyChain salva
         loadKey(account: viewBiometric.userField.text!)
+        
         let localAuthenticationContext = LAContext()
         var authError: NSError?
         let reasonString = "Para autenticar no APP"
         
-        if localAuthenticationContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &authError) {
+        //verifica se tem acesso ao Touch ID
+        if localAuthenticationContext.canEvaluatePolicy(.deviceOwnerAuthentication, error: &authError) {
             
-            localAuthenticationContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reasonString) { success, evaluateError in
+            localAuthenticationContext.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reasonString) { success, evaluateError in
                 
                 if success {
                     
@@ -109,7 +113,7 @@ class ViewController: UIViewController {
         } else {
             switch errorCode {
             case LAError.touchIDLockout.rawValue:
-                message = "Too many failed attempts."
+                message = "Muitas tentativas falhas."
                 
             case LAError.touchIDNotAvailable.rawValue:
                 message = "TouchID não disponivel nesse dispositivo"
