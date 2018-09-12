@@ -8,6 +8,7 @@
 
 import UIKit
 import LocalAuthentication
+import KeychainAccess
 
 class ViewController: UIViewController {
 
@@ -26,10 +27,15 @@ class ViewController: UIViewController {
         
         viewBiometric.biometricButton.addTarget(self, action: #selector(authenticator), for: UIControlEvents.touchDown)
         
+        
+        loadKey(account: "Teste")
+        
     }
     
     @objc func authenticator()
     {
+        saveKey(account: viewBiometric.userField.text!, password: viewBiometric.passwordField.text!)
+        loadKey(account: viewBiometric.userField.text!)
         let localAuthenticationContext = LAContext()
         var authError: NSError?
         let reasonString = "Para autenticar no APP"
@@ -60,6 +66,21 @@ class ViewController: UIViewController {
             
             showAlert(message: self.evaluateAuthenticationPolicyMessageForLA(errorCode: error._code))
         }
+    }
+    
+    func saveKey(account: String, password: String) {
+        let keychain = Keychain(service: "test")
+        keychain[account] = password
+    }
+    
+    func loadKey(account: String) {
+        let keychain = Keychain(service: "test")
+        authenticateUser(storedPassword: keychain[account]!)
+    }
+    
+    func authenticateUser(storedPassword :  String)
+    {
+        print(storedPassword)
     }
     
     func showAlert(message: String)

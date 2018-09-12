@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE17F3C8A685D59B797F4BF1 /* Pods_TestBiometric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F9958B14E42EDE729A0108 /* Pods_TestBiometric.framework */; };
 		F49BA41C2149305000972920 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49BA41B2149305000972920 /* AppDelegate.swift */; };
 		F49BA41E2149305000972920 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49BA41D2149305000972920 /* ViewController.swift */; };
 		F49BA4242149305000972920 /* TestBiometric.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F49BA4222149305000972920 /* TestBiometric.xcdatamodeld */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25F9958B14E42EDE729A0108 /* Pods_TestBiometric.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestBiometric.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4602056A36B9F6D471B01D0B /* Pods-TestBiometric.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestBiometric.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestBiometric/Pods-TestBiometric.release.xcconfig"; sourceTree = "<group>"; };
+		685A5D1A304077617DE089DB /* Pods-TestBiometric.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestBiometric.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestBiometric/Pods-TestBiometric.debug.xcconfig"; sourceTree = "<group>"; };
 		F49BA4182149305000972920 /* TestBiometric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestBiometric.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49BA41B2149305000972920 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F49BA41D2149305000972920 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,18 +38,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				F49BA4342149371F00972920 /* LocalAuthentication.framework in Frameworks */,
+				EE17F3C8A685D59B797F4BF1 /* Pods_TestBiometric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5DB3EF2DA966EDC9AF4C967A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				685A5D1A304077617DE089DB /* Pods-TestBiometric.debug.xcconfig */,
+				4602056A36B9F6D471B01D0B /* Pods-TestBiometric.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F49BA40F2149305000972920 = {
 			isa = PBXGroup;
 			children = (
 				F49BA41A2149305000972920 /* TestBiometric */,
 				F49BA4192149305000972920 /* Products */,
 				F49BA4322149371E00972920 /* Frameworks */,
+				5DB3EF2DA966EDC9AF4C967A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				F49BA4332149371F00972920 /* LocalAuthentication.framework */,
+				25F9958B14E42EDE729A0108 /* Pods_TestBiometric.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -86,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F49BA42D2149305200972920 /* Build configuration list for PBXNativeTarget "TestBiometric" */;
 			buildPhases = (
+				4781C1A876AB8FA4DC1596CE /* [CP] Check Pods Manifest.lock */,
 				F49BA4142149305000972920 /* Sources */,
 				F49BA4152149305000972920 /* Frameworks */,
 				F49BA4162149305000972920 /* Resources */,
+				6F8CB862A683A80D5B269456 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,6 +161,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4781C1A876AB8FA4DC1596CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestBiometric-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F8CB862A683A80D5B269456 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TestBiometric/Pods-TestBiometric-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestBiometric/Pods-TestBiometric-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F49BA4142149305000972920 /* Sources */ = {
@@ -286,15 +343,13 @@
 		};
 		F49BA42E2149305200972920 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 685A5D1A304077617DE089DB /* Pods-TestBiometric.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HV5V7KBQHK;
 				INFOPLIST_FILE = TestBiometric/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sankhya.TestBiometric;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -304,15 +359,13 @@
 		};
 		F49BA42F2149305200972920 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4602056A36B9F6D471B01D0B /* Pods-TestBiometric.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HV5V7KBQHK;
 				INFOPLIST_FILE = TestBiometric/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sankhya.TestBiometric;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
